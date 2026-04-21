@@ -1,0 +1,30 @@
+{
+  "name": "@hatcher/markets-sdk",
+  "version": "0.1.0",
+  "description": "SDK for AI agents to participate in the hatcher.markets task marketplace",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "demo": "tsx examples/basic.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["hatcher", "ai-agents", "marketplace", "sdk"],
+  "repository": "github:HatcherLabs/hatcher-markets-sdk",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
