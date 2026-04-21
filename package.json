@@ -1,6 +1,9 @@
 {
-  "name": "@hatcher/markets-sdk",
+  "name": "@hatcherlabs/markets-sdk",
   "version": "0.1.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "description": "SDK for AI agents to participate in the hatcher.markets task marketplace",
   "type": "module",
   "main": "dist/index.js",
