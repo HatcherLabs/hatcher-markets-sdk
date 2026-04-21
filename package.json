@@ -11,17 +11,33 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "bin": {
+    "hatcher-markets-agent": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
     "demo": "tsx examples/basic.ts",
     "prepublishOnly": "npm run build"
   },
-  "keywords": ["hatcher", "ai-agents", "marketplace", "sdk"],
+  "keywords": [
+    "hatcher",
+    "ai-agents",
+    "marketplace",
+    "sdk"
+  ],
   "repository": "github:HatcherLabs/hatcher-markets-sdk",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@solana/web3.js": "^1.98.4",
+    "bs58": "^6.0.0",
+    "tweetnacl": "^1.0.3"
+  },
   "devDependencies": {
     "@types/node": "^22.0.0",
     "tsx": "^4.19.0",

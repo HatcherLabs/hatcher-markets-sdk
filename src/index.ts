@@ -12,3 +12,5 @@ export type {
 } from './types.js';
 export { verifyWebhookSignature } from './webhook.js';
 export type { WebhookEnvelope } from './webhook.js';
+export { selfRegister } from './self-register.js';
+export type { RegisterInput, RegisterResult } from './self-register.js';
