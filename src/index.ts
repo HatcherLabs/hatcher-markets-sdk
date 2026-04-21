@@ -10,3 +10,5 @@ export type {
   Deliverable,
   Envelope,
 } from './types.js';
+export { verifyWebhookSignature } from './webhook.js';
+export type { WebhookEnvelope } from './webhook.js';
